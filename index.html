@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#9575cd" />
+    <title>شبكة زين للإنترنت</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/tab.png">
+    <meta name="description" content="Captive portal and hotspot interface for internet service providers.">
+</head>
+<body translate="no">
+<div class="cont">
+    <div class="demo">
+        <div class="login">
+		
+            <div style="padding-top: 50px;">
+                <img src="img/logo.png" class="logo" alt="#"/>
+            </div>
+            <p class="info" style="font-size: 2rem">شبكة زين للإنترنت</p>
+            <p class="info error" id="error"></p>
+            <div class="login-form">
+                <form name="login" onsubmit="return onLoginSubmitted()">
+                    <input type="hidden" name="dst" value="$(link-orig)"/>
+                    <input type="hidden" name="popup" value="true"/>
+                    <label>
+                        <img class="ico" src="img/user.svg" alt="#" />
+                        <input name="username" type="text" placeholder="إسم المستخدم"required autocomplete="off" username-field
+                                   improve-input only-alphanumeric to-lower to-arabic-numbers/>
+                    </label>
+
+                    <label>
+                        <img class="ico" src="img/password.svg" alt="#" />
+                        <input name="password" type="password" placeholder="كلمة المرور" />
+                    </label>
+                   
+                    <button type="button" class="login-submit" parent-id="status" enable-hot-cookie>تسجيل الدخول
+                    </button>
+                </form>
+				<button type="button" class="price-submit round-button" parent-id="price">الاسعار</button>
+                <button type="button" class="price-submit round-button" parent-id="sell-point">نقاط البيع</button>
+            </div>
+            <p class="info bt contact">
+                <span>الدعم الفني : </span>
+                <span>059XXXXXXX</span>
+            </p>
+        </div>
+        <div class="app" id="price">
+            <div class="app-top">
+
+                <p class="app-hello">نورتنا يا كبير &#128525</p>
+
+                <div class="app-user">
+                    هنا اسعار الاشتراكات اختر مايناسبك منها
+                </div>
+            </div>
+            <div class="app-bot">
+                <table>
+                    <thead>
+                    <tr>
+                        <th scope="col">الفئة</th>
+                        <th scope="col">الوقت</th>
+                        <th scope="col">الرصيد</th>
+                        <th scope="col">الصلاحية</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1 شيكل</td>
+                        <td>30 ساعة	</td>
+                        <td>مفتوح</td>
+                        <td>30 ساعة</td>
+                    </tr>
+                    <tr>
+                        <td>6 شيكل</td>
+                        <td>10 يوم</td>
+                        <td>مفتوح</td>
+                        <td>10 ايام</td>
+                    </tr>
+                    <tr>
+                        <td>15 شيكل</td>
+                        <td>30 يوم	</td>
+                        <td>مفتوح</td>
+                        <td>30 يوم	</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="bottom-info">
+                    <p class="contact-text">يمكنك التواصل بفريق الدعم عبر الرقم التالي:</p>
+                    <div class="app-user">
+                        059XXXXXXX
+                    </div>
+                    <p class="info bt">
+                        <span>Designed & Developed by Ahmed Waqqad</span>
+                    </p>
+                </div>
+                <div class="app-logout">
+                    <svg class="app-logout-icon svg-icon" viewBox="0 0 20 20">
+                        <path d="M6,3 a8,8 0 1,0 8,0 M10,0 10,12"/>
+                    </svg>
+                </div>
+            </div>
+
+        </div>
+        <div class="app" id="sell-point">
+            <div class="app-top">
+
+                <p class="app-hello">نقاط البيع</p>
+
+            </div>
+            <div class="app-bot">
+                <table>
+                    <tbody>
+                    <tr>
+                        <td style="font-size: 1.3rem;">سوبر ماركت ابو عمر الدحدوح مقابل القرية البدوية</td>
+                    </tr>
+                    <tr>
+                        <td style="font-size: 1.3rem;">بقالة عبد الغرابلي بالقرب من المسلخ الجديد</td>
+                    </tr>
+                    <tr>
+                        <td style="font-size: 1.3rem;">بقالة ياسر ابو عمرة بالقرب من مسجد ابو هريرة</td>
+                    </tr>
+                    <tr>
+                        <td style="font-size: 1.3rem;">بسطة شادي الغرة بالقرب من المسلخ الجديد</td>
+                    </tr>
+					
+                    </tbody>
+                </table>
+                <div class="bottom-info">
+                    <p class="contact-text">يمكنك التواصل بفريق الدعم عبر الرقم التالي:</p>
+                    <div class="app-user">
+                        059XXXXXXX
+                    </div>
+                    <p class="info bt">
+                        <span>Designed & Developed by Ahmed Waqqad</span>
+                    </p>
+                </div>
+                <div class="app-logout">
+                    <svg class="app-logout-icon svg-icon" viewBox="0 0 20 20">
+                        <path d="M6,3 a8,8 0 1,0 8,0 M10,0 10,12"/>
+                    </svg>
+                </div>
+            </div>
+
+        </div>
+        <div class="app" id="status">
+            <div class="app-top">
+
+                <p class="app-hello">تم تسجيل دخولك بنجاح!</p>
+
+                <div class="app-user">
+                    مرحبا كرتك هو:
+                    <span id="username"></span>
+                </div>
+            </div>
+            <div class="app-bot">
+                <table>
+                    <tbody>
+                    <tr>
+                        <td>عنوان الشبكة</td>
+                        <td id="ip"></td>
+                    </tr>
+                    <tr>
+                        <td>التنزيل</td>
+                        <td id="bytes_in"></td>
+                    </tr>
+                    <tr>
+                        <td>الرفع</td>
+                        <td id="bytes_out"></td>
+                    </tr>
+                    <tr remain_bytes_total>
+                        <td>التحميل المتبقي</td>
+                        <td id="remain_bytes_total"></td>
+                    </tr>
+                    <tr>
+                        <td>الوقت المستهلك</td>
+                        <td id="uptime"></td>
+                    </tr>
+                    <tr session_time_left>
+                        <td>الوقت المتبقي</td>
+                        <td id="session_time_left"></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="bottom-info">
+                    <p class="contact-text">يمكنك التواصل بفريق الدعم عبر الرقم التالي:</p>
+                    <div class="app-user">
+                        059XXXXXXX
+                    </div>
+                    <p class="info bt">
+                        <span>Designed & Developed by Ahmed Waqqad</span>
+                    </p>
+                </div>
+                <div class="app-logout" erase-cookie clear-hot-cookie>
+                    <svg class="app-logout-icon svg-icon" viewBox="0 0 20 20">
+                        <path d="M6,3 a8,8 0 1,0 8,0 M10,0 10,12"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="app" id="block">
+            <div class="app-top">
+                <p class="app-hello">انت محظور</p>
+            </div>
+            <div class="app-bot">
+                <div style="padding: 25px">
+                    <p class="contact-text">لقد تم حظرك بسبب محاولات تسجيل الدخول الكثيرة الخاطئة</p>
+                    <div class="app-user">
+                        <span>بقي على فك الحظر: </span>
+                        <span count-down-span></span>
+                    </div>
+                </div>
+                <div class="bottom-info" style="right: 86px">
+                    <p class="info bt">
+                        <span>Designed & Developed by Ahmed Waqqad</span>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script src="js/hotInImprover.min.js"></script>
+<script src="js/hotCookie.min.js"></script>
+<script src="js/hotBlocker.min.js" enable-hot-blocker try-count="3" block-time="1"></script>
+<script src="js/main.min.js" link-login-only="$(link-login-only)"></script>
+</body>
+
+</html>
